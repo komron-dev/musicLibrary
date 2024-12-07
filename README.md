@@ -30,12 +30,6 @@ apt-get install -y migrate
     brew install sqlc
     ```
 
-- [Gomock](https://github.com/golang/mock)
-
-    ``` bash
-    go install github.com/golang/mock/mockgen
-    ```
-
 ### Steps to run and use the project
 
 - Create ```song_library``` database:
@@ -78,3 +72,4 @@ apt-get install -y migrate
     make run
     ```
 
+Open the following link in your browser to test APIs: http://localhost:8080/swagger/docs/index.html

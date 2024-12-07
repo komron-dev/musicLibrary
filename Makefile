@@ -43,10 +43,6 @@ sqlc:
 	@echo "Generating SQLC code"
 	sqlc generate
 
-mock:
-	@echo "Generating mock store for the Store interface"
-	mockgen -package mockdb -destination db/mock/store.go github.com/komron-dev/musicLibrary/db/sqlc Store
-
 swag-gen:
 	@echo "Generating Swagger documentation"
 	swag init -g ./api/server.go -o ./api/docs
